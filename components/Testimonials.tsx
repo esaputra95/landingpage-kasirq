@@ -144,7 +144,7 @@ export default function Testimonials({ data = [] }: TestimonialsProps) {
         >
           <div className="text-center">
             <p className="text-4xl md:text-5xl font-bold gradient-text mb-2">
-              10,000+
+              100+
             </p>
             <p className="text-gray-300">Pengguna Aktif</p>
           </div>

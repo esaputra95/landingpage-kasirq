@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4 relative overflow-hidden"
+      className="min-h-screen lg:min-h-[calc(100vh-4rem)] flex items-center justify-center pt-24 pb-12 px-4 relative overflow-hidden"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -18,10 +18,10 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
@@ -30,20 +30,20 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-block mb-4"
+              className="inline-block mb-3"
             >
               <span className="px-4 py-2 bg-primary-500/20 border border-primary-500/30 rounded-full text-sm text-primary-300">
                 🚀 Platform POS Terdepan
               </span>
             </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
               Kelola Bisnis Anda{" "}
               <span className="gradient-text">Dimana Saja, </span>
               <span className="gradient-text">Kapan Saja</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-300 mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Aplikasi POS digital yang dapat diakses melalui{" "}
               <span className="text-primary-400 font-semibold">mobile</span> dan{" "}
               <span className="text-secondary-400 font-semibold">web</span>{" "}
@@ -55,7 +55,7 @@ export default function Hero() {
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-primary-500/50 transition-shadow"
+                className="px-8 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-primary-500/50 transition-shadow"
               >
                 Mulai Gratis
                 <ArrowRight size={20} />
@@ -65,7 +65,7 @@ export default function Hero() {
                 href="#how-it-works"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 glass border border-primary-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-colors"
+                className="px-8 py-3 glass border border-primary-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-colors"
               >
                 Lihat Demo
               </motion.a>
@@ -76,14 +76,14 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <Smartphone className="text-primary-400" size={24} />
                 <div>
-                  <p className="text-2xl font-bold">Android</p>
+                  <p className="text-xl font-bold">Android</p>
                   <p className="text-sm text-gray-400">Mobile App</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <Globe className="text-secondary-400" size={24} />
                 <div>
-                  <p className="text-2xl font-bold">Web App</p>
+                  <p className="text-xl font-bold">Web App</p>
                   <p className="text-sm text-gray-400">Akses Browser</p>
                 </div>
               </div>
@@ -95,9 +95,9 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <div className="relative glass-dark rounded-2xl p-2 shadow-2xl animate-[float_6s_ease-in-out_infinite]">
+            <div className="relative glass-dark rounded-2xl p-2 shadow-2xl animate-[float_6s_ease-in-out_infinite] max-w-md w-full">
               <Image
                 src="/images/pos-dashboard.jpg"
                 alt="KasirQ Dashboard Preview"
@@ -114,17 +114,21 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -top-6 -right-6 glass px-4 py-3 rounded-xl shadow-lg"
+              className="absolute -top-4 -right-0 lg:-right-6 glass px-4 py-2 rounded-xl shadow-lg z-20"
             >
-              <p className="text-sm text-gray-300">✅ Sync Real-time</p>
+              <p className="text-xs font-semibold text-gray-300">
+                ✅ Sync Real-time
+              </p>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity, delay: 0.5 }}
-              className="absolute -bottom-6 -left-6 glass px-4 py-3 rounded-xl shadow-lg"
+              className="absolute -bottom-4 -left-0 lg:-left-6 glass px-4 py-2 rounded-xl shadow-lg z-20"
             >
-              <p className="text-sm text-gray-300">📱 Multi-Platform</p>
+              <p className="text-xs font-semibold text-gray-300">
+                📱 Multi-Platform
+              </p>
             </motion.div>
           </motion.div>
         </div>

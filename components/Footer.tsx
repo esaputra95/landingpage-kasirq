@@ -84,7 +84,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">WhatsApp</p>
-                    <p className="font-semibold">+62 812-3456-7890</p>
+                    <p className="font-semibold">+62 823-8648-1023</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -94,7 +94,9 @@ export default function Footer() {
                   <div>
                     <p className="text-sm text-gray-400">Kantor</p>
                     <p className="font-semibold">
-                      Jl. Sudirman No. 123, Jakarta Selatan
+                      Jl Rajawali Sakti - 150 meter dari simpang Hr Subrantas
+                      Panam, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau
+                      28293
                     </p>
                   </div>
                 </div>
