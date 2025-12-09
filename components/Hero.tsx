@@ -52,8 +52,9 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
               <motion.a
-                href="#contact"
+                href="https://drive.google.com/drive/folders/18kjb1C-XfaLSXmYeq_bNBlLcGueCif6A?usp=sharing"
                 whileHover={{ scale: 1.05 }}
+                target="_blank"
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-primary-500/50 transition-shadow"
               >
@@ -62,7 +63,8 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href="#how-it-works"
+                href="https://drive.google.com/drive/folders/18kjb1C-XfaLSXmYeq_bNBlLcGueCif6A?usp=sharing"
+                target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3 glass border border-primary-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-colors"

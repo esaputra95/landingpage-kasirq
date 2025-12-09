@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "KasirQ",
   ],
   authors: [{ name: "KasirQ" }],
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "KasirQ - Aplikasi POS Modern untuk Mobile & Web",
     description:
